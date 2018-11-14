@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="GB2312">
+<meta charset="utf-8">
 <title>vue_test</title>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <link type="text/css" rel="stylesheet" href="style.css"/>
@@ -18,14 +18,14 @@
 
 	<div id="app-2">
 	  <span v-bind:title="message">
-		Êó±êĞüÍ£¼¸ÃëÖÓ²é¿´´Ë´¦¶¯Ì¬°ó¶¨µÄÌáÊ¾ĞÅÏ¢£¡
+		å¼€å§‹
 	  </span>
 	</div>
 
 	<div id="app-3">
-	  <p v-if="seen">ÏÖÔÚÄã¿´µ½ÎÒÁË</p>
+	  <p v-if="seen">v-iftestæµ‹è¯•/p>
 	</div>
-	
+
 	<div id="app-4">
 		<ol>
 			<li v-for="todo in todos">
@@ -33,25 +33,25 @@
 			</li>
 		</ol>
 	</div>
-	
+
 	<div id="app-5">
 		<p>{{ message }}</p>
-		<button v-on:click="reverse">Äæ×ªÏûÏ¢</button>
+		<button v-on:click="reverse">v-onæµ‹è¯•</button>
 	</div>
 
 	<div id="app-6">
 	  <p>{{ message }}</p>
 	  <input v-model="message">
 	</div>
-	
+
 	<div id="app-7">
 	  <ol>
-		<!--
-		  ÏÖÔÚÎÒÃÇÎªÃ¿¸ö todo-item Ìá¹© todo ¶ÔÏó
-		  todo ¶ÔÏóÊÇ±äÁ¿£¬¼´ÆäÄÚÈİ¿ÉÒÔÊÇ¶¯Ì¬µÄ¡£
-		  ÎÒÃÇÒ²ĞèÒªÎªÃ¿¸ö×é¼şÌá¹©Ò»¸ö¡°key¡±£¬ÉÔºóÔÙ
-		  ×÷ÏêÏ¸½âÊÍ¡£
-		-->
+			<!--
+	      ç°åœ¨æˆ‘ä»¬ä¸ºæ¯ä¸ª todo-item æä¾› todo å¯¹è±¡
+	      todo å¯¹è±¡æ˜¯å˜é‡ï¼Œå³å…¶å†…å®¹å¯ä»¥æ˜¯åŠ¨æ€çš„ã€‚
+	      æˆ‘ä»¬ä¹Ÿéœ€è¦ä¸ºæ¯ä¸ªç»„ä»¶æä¾›ä¸€ä¸ªâ€œkeyâ€ï¼Œç¨åå†
+	      ä½œè¯¦ç»†è§£é‡Šã€‚
+	    -->
 		<todo-item
 		  v-for="item in list"
 		  v-bind:todo="item"
@@ -63,13 +63,3 @@
 test
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-

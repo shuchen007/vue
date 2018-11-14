@@ -9,7 +9,7 @@ console.log("fdjk"+app.message);
 var app2 = new Vue({
   el: '#app-2',
   data: {
-    message: '页面加载于 ' + new Date().toLocaleString()
+    message: '鏃堕棿 ' + new Date().toLocaleString()
   }
 });
 var app3 = new Vue({
@@ -24,7 +24,7 @@ var app4 = new Vue({
     todos: [
       { text: '学习 JavaScript' },
       { text: '学习 Vue' },
-      { text: '整个牛项目' }
+      { text: 'css ' }
     ]
   }
 })
@@ -57,9 +57,9 @@ var app7 = new Vue({
   el: '#app-7',
   data: {
     list: [
-      { id: 0, text: '蔬菜' },
-      { id: 1, text: '奶酪' },
-      { id: 2, text: '随便其它什么人吃的东西' }
+      { id: 0, text: '钄彍' },
+      { id: 1, text: '濂堕叒' },
+      { id: 2, text: '闅忎究鍏跺畠浠�涔堜汉鍚冪殑涓滆タ' }
     ]
   }
 })
