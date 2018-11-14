@@ -12,36 +12,37 @@
 
 </head>
 <body>
+
 	<div id="app">
 	  {{ message }}
 	</div>
 
 	<div id="app-2">
 	  <span v-bind:title="message">
-		开始
+		开始测试v-bind
 	  </span>
 	</div>
 
 	<div id="app-3">
-	  <p v-if="seen">v-iftest测试/p>
+	  <p v-if="seen">测试v-if</p>
 	</div>
 
 	<div id="app-4">
-		<ol>
+		<ol>测试v-for:
 			<li v-for="todo in todos">
-			  {{ todo.text }}
+			 {{ todo.id }}: {{ todo.text }}
 			</li>
 		</ol>
 	</div>
 
 	<div id="app-5">
 		<p>{{ message }}</p>
-		<button v-on:click="reverse">v-on测试</button>
+		<button v-on:click="reverse">测试v-on</button>
 	</div>
 
 	<div id="app-6">
 	  <p>{{ message }}</p>
-	  <input v-model="message">
+	  <input v-model="message">测试v-model
 	</div>
 
 	<div id="app-7">
@@ -52,14 +53,16 @@
 	      我们也需要为每个组件提供一个“key”，稍后再
 	      作详细解释。
 	    -->
+		测试compnent
 		<todo-item
-		  v-for="item in list"
-		  v-bind:todo="item"
-		  v-bind:key="item.id">
+		 v-for="item in list"
+		  v-bind:gld="item"
+		  v-bind:key="item.text" >
 		</todo-item>
 	  </ol>
 	</div>
+
+test：
 	<script src="index.js"></script>
-test
 </body>
 </html>
