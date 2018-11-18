@@ -65,7 +65,7 @@ var app7 = new Vue({
   el: '#app-7',
   data: {
     list: [
-      { id: 0, text: '蔬菜' },
+      { id: 0, text: '蔬1菜' },
       { id: 1, text: '奶酪' },
       { id: 2, text: '随便其它什么人吃的东西' }
     ]
@@ -75,3 +75,8 @@ var app7 = new Vue({
 app4.todos.push({text:'xuexi2'})
 app2.message='to do';
 app.message='i hava change this guy';
+
+var vm = { rawHtml: 1 }
+
+
+
